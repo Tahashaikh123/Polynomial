@@ -73,16 +73,17 @@ public class Polynomial {
 					else {
 						Node newNode = new Node(ptr.term.coeff+ptr2.term.coeff, ptr.term.degree ,null);
 						if (front == null) {
-						front = newNode;
-						pointer = newNode;
-					}
-				else {
-						pointer.next = newNode;
-						pointer = newNode;
-				}
+							front = newNode;
+							pointer = newNode;
+						}
+						else {
+							pointer.next = newNode;
+							pointer = newNode;
+						}
 					ptr=ptr.next;
 					ptr2=ptr2.next;
-				}}
+					}
+				}
 				else if (ptr.term.degree > ptr2.term.degree) {		
 					Node newNode = new Node(ptr2.term.coeff, ptr2.term.degree,null);
 					if (front ==null) {

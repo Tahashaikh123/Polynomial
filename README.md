@@ -1,10 +1,7 @@
 # Polynomial
-Add, multiply and evaluate polynomials stored as linked lists
+Add, multiply and evaluate polynomials stored as linked lists, such as:
 
-
-<coeff> <degree>
  *     <coeff> <degree>
- *     ...
  *     <coeff> <degree>
  * with the GUARENTEE that degrees will be in descending order. For example:
  *      4 5
